@@ -171,8 +171,9 @@ class Connect:
         Example: get_user_attrib(username='username', attrib='mail')
         Example: get_user_attrib(username='username', attrib=['mail', 'displayName'])
         """
-        ou = self.USERS_BASE
         if ou is None:
+            ou = self.USERS_BASE    # default
+        if ou is None:  # if still not set.
             raise ValueError(f'OU is required. Current value is {ou}')    
         
         if attrib is None:  # default all
@@ -207,8 +208,9 @@ class Connect:
         Example: get_attrib(search='mail=fist.last@company.com', attrib='cn')
         Example: get_attrib(search='mail=fist.last@company.com', attrib=['cn', 'displayName'])
         """
-        ou = self.USERS_BASE
         if ou is None:
+            ou = self.USERS_BASE    # default
+        if ou is None: # if still not set.
             raise ValueError(f'OU is required. Current value is {ou}')
             
         if attrib is None:  # default all
@@ -244,8 +246,9 @@ class Connect:
             search_all_attrib(search='division=BPIT (070)', attrib='cn')
        
         """
-        ou = self.USERS_BASE
         if ou is None:
+            ou = self.USERS_BASE    # default
+        if ou is None: # if still not set.
             raise ValueError(f'OU is required. Current value is {ou}')
             
         if attrib is None:  # default all
