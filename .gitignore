@@ -1,0 +1,4 @@
+test.py
+dist/
+pyconnldap.egg-info/
+__pycache__/
