@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyconnldap"
-version = "1.0.1"
+version = "1.0.2"
 description = "A simplified Python library for LDAP connection and operations."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 
 authors = [
-  { name = "Josephus", email = "no-reply@gmail.com" }
+  { name = "Josephus", email = "orca099210@gmail.com" }
 ]
 
 dependencies = [
